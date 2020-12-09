@@ -27,7 +27,7 @@ html {
 }
 /*###############################################*/
 /*Begin Menu section*/
-.navbar{
+.navbar {
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -35,44 +35,44 @@ html {
   font-family: 'Ubuntu', sans-serif;
   transition: all 0.3s ease;
 }
-.navbar.sticky{
+.navbar.sticky {
   padding: 15px 0;
-  background: crimson;
+  background: #c11325;
 }
-.navbar .max-width{
+.navbar .max-width {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.navbar .logo a{
-  color: #fff;
+.navbar .logo a {
+  color: #ffffff;
   font-size: 35px;
   font-weight: 600;
 }
-.navbar .logo a span{
-  color: crimson;
+.navbar .logo a span {
+  color: #c11325;
   transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span{
-  color: #fff;
+.navbar.sticky .logo a span {
+  color: #ffffff;
 }
-.navbar .menu li{
+.navbar .menu li {
   list-style: none;
   display: inline-block;
 }
-.navbar .menu li a{
+.navbar .menu li a {
   display: block;
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
   transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
-  color: crimson;
+.navbar .menu li a:hover {
+  color: #c11325;
 }
-.navbar.sticky .menu li a:hover{
-  color: #fff;
+.navbar.sticky .menu li a:hover {
+  color: #ffffff;
 }
 /*Sandwich Button Menu*/
 .menu-btn {
@@ -94,13 +94,13 @@ html {
   z-index: 9999;
   font-size: 30px;
   border-radius: 6px;
-  border-bottom: 2px;
+  border-bottom-width: 2px;
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
 }
-.scroll-up-btn .show {
+.scroll-up-btn.show {
   bottom: 30px;
   opacity: 1;
   pointer-events: auto;
@@ -171,19 +171,19 @@ footer {
   font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.service .serv-content,
+.services .serv-content,
 .skills .skills-content,
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  align-content: space-between;
+  justify-content: space-between;
 }
 section .title {
   position: relative;
   text-align: center;
   font-size: 40px;
-  font-weight: 400px;
+  font-weight: 400;
   margin-bottom: 60px;
   padding-bottom: 20px;
   font-family: 'Ubuntu', sans-serif;
@@ -200,12 +200,12 @@ section .title::before {
 }
 section .title::after {
   position: absolute;
-  bottom: -12px;
+  bottom: -8px;
   left: 50%;
   font-size: 20px;
   color: #c11325;
-  padding: 5px;
-  background: #ffffff;
+  padding: 0 5px;
+  background: #fff;
   transform: translateX(-50%);
 }
 /*End Same Style content styling code */
@@ -259,13 +259,13 @@ section .title::after {
 .services,
 .teams {
   color: #ffffff;
-  background: #111111;
+  background: #111;
 }
-.services .title:before,
-.teams .title:before {
+.services .title::before,
+.teams .title::before {
   background: #ffffff;
 }
-.services .title:after,
+.services .title::after,
 .teams .title::after {
   background: #111111;
   content: 'What I provide';
@@ -277,7 +277,7 @@ section .title::after {
   border-radius: 6px;
   padding: 20px 25px;
   cursor: pointer;
-  display: inline-block;
+  transition: all 0.3s ease;
 }
 .services .serv-content .card:hover {
   background: #c11325;
@@ -291,7 +291,7 @@ section .title::after {
 .services .serv-content .card i {
   font-size: 50px;
   color: #c11325;
-  transition: color 1s ease;
+  transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i {
   color: #ffffff;
@@ -308,14 +308,14 @@ section .title::after {
   content: 'What I Know';
 }
 .skills .skills-content .column {
-  width: calc(50% - 10px);
+  width: calc(50% - 30px); /*50-10*/
 }
 .skills .skills-content .left .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.skills .skills-content .left .p {
+.skills .skills-content .left p {
   text-align: justify;
 }
 .skills .skills-content .left a {
@@ -350,42 +350,44 @@ section .title::after {
 .skills .skills-content .right .line {
   height: 5px;
   width: 100%;
-  background: lightgray;
+  background: lightgrey;
+  position: relative;
 }
-.skills .skills-content .right .line:before {
+.skills .skills-content .right .line::before {
   content: '';
   position: absolute;
   height: 100%;
   left: 0;
   top: 0;
-  background-color: #c11325;
+  background: #c11325;
 }
-.skills .skills-content .right .html::before {
+.skills-content .right .krt::before {
+  width: 100%;
+}
+.skills-content .right .hp::before {
   width: 90%;
 }
-.skills .skills-content .right .css::before {
-  width: 60%;
+.skills-content .right .nut::before {
+  width: 65%;
 }
-.skills .skills-content .right .js::before {
-  width: 80%;
+.skills-content .right .per::before {
+  width: 90%;
 }
-.skills .skills-content .right .php::before {
-  width: 50%;
-}
-.skills .skills-content .right .mysql::before {
-  width: 70%;
+.skills-content .right .sman::before {
+  width: 85%;
 }
 /* End Skills Section*/
 
 /* Begin Team Section*/
 .teams .title::after {
-  content: 'Who with me';
+  content: 'who with me';
 }
 .teams .carousel .card {
   background: #222222;
   border-radius: 6px;
   padding: 25px 35px;
   text-align: center;
+  overflow: hidden;
   transition: all 0.3s ease;
 }
 .teams .carousel .card:hover {
@@ -447,7 +449,6 @@ section .title::after {
 .contact .contact-content .column {
   width: calc(50% - 30px);
 }
-
 .contact .contact-content .text {
   font-size: 20px;
   font-weight: 600;
@@ -480,7 +481,7 @@ section .title::after {
 .contact .right form .fields {
   display: flex;
 }
-.contact .right form .fields,
+.contact .right form .field,
 .contact .right form .fields .field {
   height: 45px;
   width: 100%;
@@ -500,12 +501,17 @@ section .title::after {
 .contact .right form .textarea textarea {
   height: 100%;
   width: 100%;
-  border: 1ps solid lightgray;
+  border: 1px solid lightgrey;
   border-radius: 6px;
   outline: none;
   padding: 0 15px;
   font-size: 17px;
   font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+  border-color: #c11325;
 }
 .contact .right form .textarea textarea {
   padding-top: 10px;
@@ -521,6 +527,7 @@ section .title::after {
   border: 2px solid #c11325;
   background: #c11325;
   color: #ffffff;
+  outline: none;
   font-size: 20px;
   font-weight: 500;
   border-radius: 6px;
@@ -538,6 +545,7 @@ footer {
   background: #000000;
   padding: 20px 23px;
   color: #ffffff;
+  text-align: center;
 }
 footer span a {
   color: #c11325;
@@ -571,7 +579,7 @@ footer span a:hover {
 
 @media (max-width: 947px) {
   .max-width {
-    padding: 0 50px;
+    max-width: 930px;
   }
   .menu-btn {
     display: block;
@@ -588,11 +596,11 @@ footer span a:hover {
     top: 0;
     background: #111111;
     text-align: center;
-    padding: 80px;
+    padding-top: 80px;
     transition: all 0.3s ease;
   }
   .navbar .menu.active {
-    left: 0%;
+    left: 0;
   }
   .navbar .menu li {
     display: block;
@@ -612,11 +620,11 @@ footer span a:hover {
     font-size: 23px;
     padding: 10px 30px;
   }
-  .max-width {
+  /* .max-width {
     max-width: 800px;
-  }
+  }*/
   .about .about-content .column {
-    width: 50%;
+    width: 100%;
   }
   .about .about-content .left {
     display: flex;
@@ -658,12 +666,31 @@ footer span a:hover {
 
 @media (max-width: 500px) {
   .max-width {
-    padding: 0 23px;
+    padding: 0 20px;
   }
   .home .home-content .text-2 {
     font-size: 50px;
   }
   .home .home-content .text-3 {
     font-size: 27px;
+  }
+  .about .about-content .right .text,
+  .skills .skills-content .left .text {
+    font-size: 19px;
+  }
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
   }
 }
