@@ -121,6 +121,16 @@ html {
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
 }
+.home2 {
+  display: flex;
+  height: 100vh;
+  color: #ffffff;
+  background-color: black;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
 .home .max-width {
   margin: auto 0 auto 30px;
 }
