@@ -609,26 +609,40 @@ footer span a:hover {
 h2 {
   color: #ffffff;
   padding: 8px 4px;
+}
+h3 {
   border-bottom: 2px solid #c11325;
 }
 /*####################################*/
-/*input[type='radio'] {
+#s1,
+#s2,
+#s3,
+#s4,
+#s5 {
   visibility: hidden;
-}*/
+}
 
 label {
   display: block;
-  border: 4px solid #666;
-  width: 60px;
+  border: 5px solid #333333;
+  border-radius: 10px;
+  width: 110px;
   float: left;
+  padding: 2px;
 }
 
 input[type='radio']:checked + label {
-  border-color: #c11325;
+  border-color: #000000;
+  border-radius: 10px;
+  padding: 0;
 }
 img {
-  height: 50px;
+  border-radius: 6px;
+  align-content: center;
+  position: relative;
+  width: 100%;
 }
+
 /*####################################*/
 
 /* End Questionnaire Section*/
