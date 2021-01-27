@@ -168,13 +168,15 @@ section {
 .skills,
 .teams,
 .contact,
-footer {
+.generate_training,
+.footer {
   font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
-.contact .contact-content {
+.contact .contact-content,
+.generate_training {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -595,7 +597,9 @@ footer span a:hover {
 .instruction .box-quest .attention {
   color: #c11325;
 }
-
+.instruction {
+  padding-top: 100px;
+}
 .freq-box {
   position: relative;
   background-color: #000000;
@@ -642,8 +646,29 @@ img {
   position: relative;
   width: 100%;
 }
+/* Begin generate_training section*/
 
+/* End generate_training section*/
 /*####################################*/
+.generate_training {
+  background-color: #000000;
+}
+.generate_training .generate_training-content a {
+  display: inline-block;
+  background: #c11325;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #c11325;
+  transition: all 0.3s ease;
+}
+.generate_training .generate_training-content a:hover {
+  color: #ffffff;
+  background: #111111;
+}
 
 /* End Questionnaire Section*/
 
@@ -660,17 +685,26 @@ img {
     height: 350px;
     width: 350px;
   }
+  .instruction {
+    padding-top: 100px;
+  }
 }
 
 @media (max-width: 991px) {
   .max-width {
     padding: 0 50px;
   }
+  .instruction {
+    padding-top: 100px;
+  }
 }
 
 @media (max-width: 947px) {
   .max-width {
     max-width: 930px;
+  }
+  .instruction {
+    padding-top: 100px;
   }
   .menu-btn {
     display: block;
@@ -687,7 +721,7 @@ img {
     top: 0;
     background: #111111;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 100px;
     transition: all 0.3s ease;
   }
   .navbar .menu.active {
@@ -740,6 +774,9 @@ img {
   .max-width {
     padding: 0 23px;
   }
+  .instruction {
+    padding-top: 100px;
+  }
   .home .home-content .text-2 {
     font-size: 60px;
   }
@@ -758,6 +795,9 @@ img {
 @media (max-width: 500px) {
   .max-width {
     padding: 0 20px;
+  }
+  .instruction {
+    padding-top: 100px;
   }
   .home .home-content .text-2 {
     font-size: 50px;

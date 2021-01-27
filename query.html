@@ -41,7 +41,10 @@
       <h3></h3></br>
       <p>Through modern data analysis techniques,<br> we offer a personalized training taking into account your
         characteristics and interests.</p>
-      <p>This questionnaire is made up of X questions.</p>
+      <p>This questionnaire is made up of X questions.</p></br>
+      <p>Select the area of fitness that you are interested in,<br> this will enable the <span class="attention">PWLife
+          <span class="far fa-copyright"></span></span> to build a tailored
+        experience just for you.</p><br>
       <p><span class="attention"><strong>ATTENTION:</strong></span> All responses must be completed.</p></br>
       <h3></h3>
     </div>
@@ -62,7 +65,6 @@
         <input id="6" name="freq" value="6" type="radio"> &nbsp Six times a week
       </div>
     </div>
-
   </section>
   <hr>
   <section class="q2" id="q2">
@@ -72,18 +74,18 @@
       <p>What is your goal?</p></br>
       <div class="freq-box">
 
-        <!-- emagrecer -->
-        <input id="1" name="goal" value="1" type="radio"> &nbsp Lose weight </br>
         <!-- ganhar massa muscular -->
-        <input id="2" name="goal" value="2" type="radio"> &nbsp Gain muscular mass </br>
-        <!-- melhorar preparacao fisica -->
-        <input id="3" name="goal" value="3" type="radio"> &nbsp Improve fitness </br>
+        <input id="1" name="goal" value="A" type="radio"> &nbsp Gain muscular mass </br>
         <!-- hipertrofia -->
-        <input id="4" name="goal" value="4" type="radio"> &nbsp Hypertrophy </br>
-        <!-- melhorar a forca -->
-        <input id="5" name="goal" value="5" type="radio"> &nbsp Improve the strength </br>
+        <input id="2" name="goal" value="B" type="radio"> &nbsp Hypertrophy </br>
         <!-- melhorar o sistema cardiorespiratorio -->
-        <input id="6" name="goal" value="6" type="radio"> &nbsp Improve cardiorespiratory system
+        <input id="3" name="goal" value="C" type="radio"> &nbsp Improve cardiorespiratory system</br>
+        <!-- melhorar preparacao fisica -->
+        <input id="4" name="goal" value="D" type="radio"> &nbsp Improve fitness / endurance </br>
+        <!-- melhorar a forca -->
+        <input id="5" name="goal" value="E" type="radio"> &nbsp Improve the strength </br>
+        <!-- emagrecer -->
+        <input id="6" name="goal" value="F" type="radio"> &nbsp Lose weight
       </div>
     </div>
   </section>
@@ -93,26 +95,44 @@
       <h2>Biotype</h2>
       <h3></h3></br>
       <p>Select a picture that most closely matches your body type:</p></br>
+      <h6>If you do not know your body type <a href="https://www.calculator.net/body-type-calculator.html"
+          target="blank">click
+          here</a></h6>
       <div class="freq-box">
-        <input type="radio" name="shape" class="s1" id="s1" />
+        <input type="radio" name="shape" value="P" class="s1" id="s1" />
         <label for="s1"><img src="/images/body/pear.jpg" alt=""></label>
-        <input type="radio" name="shape" id="s2" />
+        <input type="radio" name="shape" value="I" id="s2" />
         <label for="s2"><img src="/images/body/invertedTriangle.jpg" alt=""></label>
-        <input type="radio" name="shape" id="s3" />
+        <input type="radio" name="shape" value="A" id="s3" />
         <label for="s3"><img src="/images/body/apple.jpg" alt=""></label>
-        <input type="radio" name="shape" id="s4" />
+        <input type="radio" name="shape" value="R" id="s4" />
         <label for="s4"><img src="/images/body/rectangle.jpg" alt=""></label>
-        <input type="radio" name="shape" id="s5" />
+        <input type="radio" name="shape" value="H" id="s5" />
         <label for="s5"><img src="/images/body/hourglass.jpg" alt=""></label>
       </div>
     </div>
   </section>
-  <hr>
+
   <!--End Questionnaire Section-->
 
+  <!--Begin generate_training Button Section-->
 
-  <!--Begin Button Section-->
-  <!--End Button Section-->
+  <!-- <section class="generate_training" id="generate_training"> -->
+  <div class="generate_training" id="generate_training">
+    <div class="max-width">
+      <div class="generate_training-content">
+        <p></br></p>
+        <!-- <a href="./assessments/" download="InstallR.pdf">Generate Training</a> -->
+        <!-- 
+          ESSE <a href="./assessments/InstallR.pdf" onclick="mostracodigo()">Generate Training</a> 
+        -->
+        <a href="#" onclick="mostracodigo()">Generate Training</a>
+        <p></br></p>
+      </div>
+    </div>
+  </div>
+  <!-- </section> -->
+  <!--End generate_training Button Section-->
 
   <!--Begin Footer Section-->
   <footer>
@@ -122,6 +142,9 @@
 
 
   <script src="/js/script.js"></script>
+  <script src="/js/generate-code.js"></script>
 </body>
 
 </html>
+
+<!--if i was to continue this work I would implemented ...-->
