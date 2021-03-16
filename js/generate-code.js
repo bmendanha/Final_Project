@@ -4,6 +4,8 @@ function mostracodigo() {
   var biotype = $("input[name='shape']:checked").val();
   var codeAssessment =
     './assessments/' + frequency + interest + biotype + '.pdf';
- alert('The variable name: ' + codeAssessment);
+  //alert('The variable name: ' + codeAssessment);
   window.open(codeAssessment);
 }
+
+
