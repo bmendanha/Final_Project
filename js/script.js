@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  
   $(window).scroll(function () {
     // sticky navbar on scroll script
     if (this.scrollY > 20) {
@@ -68,3 +67,8 @@ $(document).ready(function () {
     },
   });
 });
+// Function to check uf javascript is allowed on browser
+function hideJsWarn() {
+  var JsWarn = document.getElementById('jsWarn');
+  jsWarn.style.display = 'none';
+}
